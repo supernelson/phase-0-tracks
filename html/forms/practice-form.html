@@ -4,25 +4,35 @@
   <title>2.4 First Form</title>
 </head>
 <body>
-  <form action="success.html">
-    <div>
+  <form name="2.4 PP" action="success.html" method="post">
+    <fieldset>
+    <DIV>
+      <label>Full Name:</label>
+      <input type="text" name="full name">
+    </div>
+    <DIV>
       <label>School</label>
       <select name ="Teacher">
       <option value = "Math">Math</option>
       <option value = "History">History</option>
       <option value = "Chemistry">Chem</option>
+      </select>
     </div>
-    <div>
-      <textarea name="textarea" rows="20" cols="40">Add you text here</textarea>
-    </div>
-    <div>
+    <DIV>
       <input type="checkbox" name="cb-agree"  value="agree">
-      "Sign your life away"
+      "Sign" your life away
     </div>
+    <DIV>
       <label>Choose a Date:</label>
       <input type="date" name="date">
     </div>
-    <button type="submit">Saving my pairing session with Scott Kiczula</button>
+    <DIV>
+      <button type="submit">Saving my pairing session with Scott Kiczula</button>
+    </div>
+    <DIV>
+      <textarea name="Testing Area" rows="2" cols="30">Add your text here</textarea>
+    </div>
+  </fieldset>
   </form>
 </body>
 </html>
