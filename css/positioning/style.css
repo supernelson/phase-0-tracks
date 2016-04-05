@@ -1,0 +1,14 @@
+#octopus {
+  margin: 150px 400px;
+}
+#glasses {
+ margin: -340px 444px;
+ position: relative;
+}
+
+#hat {
+  margin: 90px 380px;
+  position: relative;
+}
+
+#how do i write this so that the glasses and hat moves relative to the octopus?
