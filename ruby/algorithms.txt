@@ -1,0 +1,26 @@
+Algorithm Psuedocode: Prepping Fresh Fruit
+
+- open the right side of the refrigerator with your right hand
+- open the bottom right cripser drawer with your left hand.
+- If there is more than one type of fruit:
+  - identify the types of fruit available.
+  - pick two fruits based on complimentary color match see hex color palette.
+  - grab one fruit per hand.
+- Otherwise (only one type of fruit)
+  - take an inventory of which fruit remains.
+  - take a note to buy more fruit.
+- push close the crisper drawer with your right hand.
+- use your butt to push the refrigerator door closed.
+- place the fruit on the counter.
+- go to the top left cabinet and grab a medium sized bowl and place the bowl on the counter.
+- determine if it is a citrus or berry (i only buy these categories of fruit).
+- If it's a berry:
+  - pick 10 of them and rinse them under water in the sink.
+  - place all of them in the bowl.
+- Otherwise:
+  - grab a chef's knife
+  - cut the orange in 6 equal pieces.
+  - place each piece in the bowl.
+  - wash the knife and put it back where you found it.
+- Eat one berry and one slice of citrus.
+- Find Nelson and give the remainder to him.

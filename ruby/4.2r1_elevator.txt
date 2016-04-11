@@ -1,0 +1,9 @@
+- Determine what floor you are currently on
+- Determine what floor you want to go to
+  - if the current floor is a number lower than your destination floor press "up".
+  - if the current floor is a number greater than your destination floor press "down".
+- Wait until the doors open then walk inside and face towards the doors.
+- Look for the floor display box which will show a number of the current floor the elevator is on.
+- While the elevator moves whistle a chipper song.
+- When the display number matches your destination floor wait for the doors to open and get out.
+- You have arrived!
