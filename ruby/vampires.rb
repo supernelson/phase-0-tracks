@@ -13,6 +13,8 @@ while num < employee_count
     employee_signup_insurance = gets.chomp
   num += 1
 end
+wolf_or_vampire
+
   case wolf_or_vampire
     when employee_age && (employee_eat_garlic_bread || employee_signup_insurance) == true
       puts "Probably not a vampire."
