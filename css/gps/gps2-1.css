@@ -1,0 +1,25 @@
+header {
+  text-align: center;
+}
+​
+.column-1 {
+  background-color: blue;
+  float: left;
+  width: 50%;
+  height: 1100px;
+  font-family: times;
+  }
+​
+​
+.column-2 {
+  background-color: red;
+  float: right;
+  width: 50%;
+  height: 1100px;
+  font-family: helvetica;
+}
+​
+footer {
+  clear: both;
+  text-align: center;
+}
