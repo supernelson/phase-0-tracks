@@ -1,0 +1,1 @@
+puts "what is the hamster's name?"
