@@ -13,8 +13,10 @@ puts "is this hamster a good candidate for adoption (yes or no)?"
 end
 puts "what is this hamster's estimated age?"
   age = gets.chomp
-  if age == ""
-    puts nil
+  if age > 0
+    puts age
   else
-    puts age.to_i
-end
+    return nil
+  end
+
+print "#{name} is a #{age} year old hamster that makes noise at level #{noise}.#{name} fur color is #{fur_color}. #{adoptability}, #{name} is adoptable."
