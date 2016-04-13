@@ -1,25 +1,24 @@
-header {
-  text-align: center;
-}
-​
 .column-1 {
-  background-color: blue;
-  float: left;
+  background-color: red;
+  display: inline-block;
+  vertical-align: text-top;
   width: 50%;
   height: 1100px;
   font-family: times;
   }
-​
+#lightning {
+  width: 40%;
+}
 ​
 .column-2 {
-  background-color: red;
-  float: right;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: text-top;
   width: 50%;
   height: 1100px;
   font-family: helvetica;
 }
-​
-footer {
+​footer {
   clear: both;
   text-align: center;
 }
