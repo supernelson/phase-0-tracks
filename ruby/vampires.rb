@@ -16,23 +16,26 @@ while num < employee_count
     puts "#{employee_name} is definitely a vampire."
   elsif employee_age < 100 && (employee_eat_garlic_bread = "yes" || employee_signup_insurance = "yes")
     puts "#{employee_name} probably NOT a vampire."
-  elsif employee_age > 100 && employee_eat_garlic_bread = "no" && employee_signup_insurance = "no"
+  elsif employee_age < 100 && employee_eat_garlic_bread = "no" && employee_signup_insurance = "no"
     puts "#{employee_name} is most certainly a vampire."
   elsif employee_age > 100 && (employee_eat_garlic_bread = "no" || employee_signup_insurance = "no")
     puts "#{employee_name} probably a vampire."
   else
     print "Results for #{employee_name} inconclusive"
   end
-  #release 4 having difficulties
-  puts "What allergies do you have?"
+  #Allergies
   all_allergies = []
-  until gets.chomp = "done"
-  allergies = gets.chomp
-  if gets.chomp = "sunshine"
-      puts "#{employee_name} is probably a vampire"
+  loop do
+    puts "What allergies do you have?"
+    allergy = gets.chomp
+    all_allergies << allergy
+    print all_allergies
+    if allergy == "sunshine"
+      puts "#{employee_name} is PROBABLY a vampire"
+      break
     end
-  all_allergies << allergies
   end
-puts all_allergies
-num += 1
+  num += 1
 end
+print "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+
