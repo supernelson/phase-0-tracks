@@ -37,5 +37,21 @@ while num < employee_count
   end
   num += 1
 end
+
+wolf_or_vampire
+
+  case wolf_or_vampire
+    when employee_age && (employee_eat_garlic_bread || employee_signup_insurance) == true
+      puts "Probably not a vampire."
+    when employee_age && (employee_eat_garlic_bread || employee_signup_insurance) != true
+      puts "Probably a vampire."
+    when employee_age && employee_eat_garlic_bread && employee_signup_insurance == false
+      puts "Almost certainly a vampire."
+    when employee_name == ("Drake Cula" || "Tu Fang")
+      print "Definitely a vampire."
+      else
+        print "results inconclusive"
+      end
+
 print "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
