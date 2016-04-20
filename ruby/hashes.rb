@@ -24,11 +24,14 @@ puts "Would you like to change any of your answer?"
 change = gets.chomp.downcase
 if change == "yes"
   puts "pick one: name, age, children, decor_theme, paint, furniture."
-  symbol = ":" + gets.chomp.downcase
+  symbol = gets.chomp.downcase.to_sym
   puts "what is your new answer?"
   new_answer = gets.chomp
-  interior_designer[symbol] << new_answer
+  interior_designer[symbol] = new_answer
   puts interior_designer
-else change == "none"
+elsif change == "none"
   puts interior_designer
 end
+
+#upgrade for edge cases and restrict conditional path
+#can't figure out how to cleanly output .to_i ln12
