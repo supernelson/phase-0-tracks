@@ -1,3 +1,4 @@
+#initialize a new hash called interior_designer
 interior_designer = {
   name: "",
   age: "",
@@ -6,6 +7,7 @@ interior_designer = {
   paint: "",
   furniture: "",
 }
+#ask the questions which correspond to the hash keys and push the values.
 puts "what is your name?"
 interior_designer[:name] << gets.chomp.to_s
 puts "what is your age?"
@@ -19,7 +21,7 @@ interior_designer[:paint] << gets.chomp.to_s
 puts "whats furniture style do you like best?"
 interior_designer[:furniture] << gets.chomp.to_s
 puts interior_designer
-
+#ask if any of the keys need updated answers/values
 puts "Would you like to change any of your answer?"
 change = gets.chomp.downcase
 if change == "yes"
