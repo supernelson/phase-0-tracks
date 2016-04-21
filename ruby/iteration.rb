@@ -27,3 +27,23 @@ sport_team.each {|team, player| puts "The best player on #{team} is #{player}."}
 sport_team.map do |team, player| puts "#{player.upcase} is the leader of #{team.upcase}"
   end
 print sport_team
+
+#release 2
+countries = ["france", "spain", "germany", "greece"]
+country_city = {france: "Paris", spain: "madrid", germany: "Berlin", greece: "athens", america: "Washington", iran: "ternan", iraq: "Baghdad" }
+
+#1 A method that iterates through the items, deleting any that meet a certain condition (for example, deleting any numbers that are less than 5).
+
+countries.delete_if {|country| country.include?("s")}
+p countries
+
+country_city.delete_if {|country, city| city.include?("h")|| country.to_s.include?("g")}
+p country_city
+
+#spencer side testing
+country_city.delete_if {|country, city| country.to_s.length > 5}
+p country_city
+
+#2 A method that filters a data structure for only items that do satisfy a certain condition (for example, keeping any numbers that are less than 5).
+
+countries.keep_if {|country| country.
