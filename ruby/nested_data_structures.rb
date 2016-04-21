@@ -21,3 +21,5 @@ print sports[:sharks][:players][1..3].to_s + "\n"
 print basketball[2][2] + "\n"
 #return jason richardson in Basketball
 print basketball[2][1][2] + "\n"
+#return all basketball
+print basketball
