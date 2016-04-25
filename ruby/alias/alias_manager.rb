@@ -7,6 +7,9 @@
 def split_flip_name
   p "what is your first and last name? (type 'print' to quit)"
   name = gets.chomp.downcase
+  old_name_array = []
+  old_name_array << name
+  p old_name_array
   split_name = name.split(' ')
   flip_name = split_name[1], split_name[0]
   #p flip_name
@@ -22,16 +25,15 @@ end
 def letter_change
   consonant = "bcdfghjklmnpqrstvwxyz"
   vowel = "aeiou"
-  name_array = []
   new_name = ""
   letter_new = ""
 
-    split_flip_name.map do |letter|
+    split_flip_name.each do |letter|
       if consonant.index(letter) != nil
         letter_new = consonant[consonant.index(letter) + 1]
       elsif vowel.index(letter) != nil
-        if vowel == "u" #addresses last vowel edge case
-          letter_new == "a"
+        if letter == "u" #addresses last vowel edge case
+          letter_new = "a"
         elsif
           letter_new = vowel[vowel.index(letter) + 1]
         end
@@ -45,10 +47,10 @@ def letter_change
 end
 
 def name_array
-  name_array = []
-  until split_flip_name == [" ", "q", "u", "i", "t"]
-    name_array << letter_change
-    p name_array
+  new_name_array = []
+  until split_flip_name == [" ", "q", "u", "i", "t"] #exits when quit is entered.
+    new_name_array << letter_change
+    p new_name_array
   end
 end
 name_array
