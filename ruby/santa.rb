@@ -26,8 +26,29 @@ class Santa
   end
 
   def get_mad_at(reindeer_name)
+   p @reindeer_rank << @reindeer_rank[@reindeer_rank.index(reindeer_name)]
+   #p @reindeer_rank.delete(reindeer_name) #this one deletes both the old and the new name
+   p @reindeer_rank.index(reindeer_name) #why does this pickup only 1 and not the new one at position last?
+   p @reindeer_rank.delete_at(@reindeer_rank.index(reindeer_name))
    p @reindeer_rank
-   p @reindeer_rank[reindeer_name]
+  end
+
+#setter method
+  def gender=(new_gender)
+    @gender= new_gender
+  end
+
+  def name=(new_name)
+    @name = new_name
+  end
+
+#getter methods
+  def age
+    @age
+  end
+
+  def ethnicity
+    @ethnicity
   end
 
 end
@@ -64,5 +85,9 @@ timing = 0
 end
 
 #doesn't work on existing santas because enumerator issues...
-rudolph = Santa.new("rudy", "male", "asian")
-rudolph.get_mad_at("Dasher") #no method error
+rudy = Santa.new("rudy", "male", "asian")
+rudy.get_mad_at("Prancer") #no method error
+#calling my setter method
+p rudy.name = "homer"
+p rudy.age
+p rudy.ethnicity
