@@ -11,18 +11,18 @@
 
 module Volume
   def loudness(integer)
-    puts "pick a number between one and ten"
-    if integer >= 5
-      puts "you're being super loud bruh."
+    puts "Are you being loud?"
+    if integer > 5
+      puts "You're being super loud."
     elsif integer <= 5
-      puts "speak up bruh I can't hear you."
+      puts "Speak up! I can't hear you."
     elsif integer == 5
-      puts "you got great volume"
+      puts "That's the perfect pitch"
     end
   end
 end
 
-class Nelson
+class Person
   include Volume
 end
 
@@ -34,6 +34,12 @@ class Fridge
   include Volume
 end
 
-nelson = Nelson.new
-nelson.loudness(5)
-p nelson.loudness(5)
+#same issue as flight.rb: my classes are not putting to console. But they don't fail either.
+anna_kendricks = Person.new
+anna_kendricks.loudness(5)
+
+golden_bear = Bear.new
+golden_bear.loudness(10)
+
+cold_storage = Fridge.new
+cold_storage.loudness(2)
