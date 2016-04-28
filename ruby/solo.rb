@@ -71,22 +71,12 @@ def user_interface
   end
   #verify the user's finished array
   puts company_array
-  puts company_array[i].name
+
   #looping each array element to extract the object data into a readable string.
   i = 0
-  until i > company_array.length
-    puts company_array[i].name
-    #puts "#{company_array[i].name} is #{company_array[i].founder}'s company."
+  until i >= company_array.length
+    puts "#{company_array[i].founder} founded #{company_array[i].name} and is #{company_array[i].age}."
     i += 1
   end
 end
 user_interface
-
-
-## Other sample companies
-# twitter = Tech_Companies.new
-# yelp = Tech_Companies.new
-# linkedin = Tech_Companies.new
-# google = Tech_Companies.new
-# apple = Tech_Companies.new
-# amazon = Tech_Companies.new
