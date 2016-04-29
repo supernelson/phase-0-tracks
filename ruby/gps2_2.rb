@@ -12,7 +12,7 @@ def grocery_list(string)
   list.each do |item|
     groceries.store(item, 0)
   end
-  p groceries
+  puts groceries
   return groceries
 end
 list = grocery_list("carrots apples cereal pizza")
@@ -23,14 +23,13 @@ list = grocery_list("carrots apples cereal pizza")
 # output: use a hash, keys can be items and values can be the quantities. Make it readable using ruby methods to identify specific values/keys.
 
 def add_item(list)
-  p "what item would you like to add?"
+  puts "what item would you like to add?"
   key = gets.chomp
-  p "how many?"
+  puts "how many?"
   value = gets.chomp
   list[key] = value
-  p list
+  puts list
 end
-add_item(list)
 
 # Method to remove an item from the list
 # input: puts question and gets.chomp
@@ -43,7 +42,7 @@ def remove_item(list)
   list.delete(key)
   p list
 end
-remove_item(list)
+
 
 # Method to update the quantity of an item
 # input: puts question and gets.chomp a new value
@@ -51,17 +50,16 @@ remove_item(list)
 # output: new hash with the key intact and a new value.
 
 def update_quantity(list)
-  p "what item would you like to update?"
+  puts "what item would you like to update?"
   key = gets.chomp.to_s
   if list.has_key?("apples")
-    p "what quantity do you need?"
+    puts "what quantity do you need?"
     new_quantity = gets.chomp.to_i
     new_list = {key => new_quantity}
     list.merge!(new_list) {|key, old_quantity, new_quantity| new_quantity}
-    p list
+    puts list
   end
 end
-update_quantity(list)
 
 # Method to print a list and make it look pretty
 # input: take the hash and ask for each key & value.
@@ -70,7 +68,30 @@ update_quantity(list)
 
 def print_out(list)
   list.each do |key, value|
-    p "#{key}: #{value}"
+    puts "#{key}: #{value}"
   end
 end
 print_out(list)
+
+#make a user interface
+#loop through add_item until a break
+
+
+def user_interface
+  new_list = {}
+  loop do
+    add_item(new_list)
+    if new_list.has_key?("done") == true
+      break
+      print_out(new_list)
+    else
+      add_item(new_list)
+    end
+  end
+end
+user_interface
+
+# Lemonade, qty: 2
+# Tomatoes, qty: 3
+# Onions, qty: 1
+# Ice Cream, qty: 4
