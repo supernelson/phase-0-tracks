@@ -1,9 +1,3 @@
-##OFFICE HOURS - diff in CoderPad /IRB/Ruby.rb
-  # def dog_years(integer)
-  #   puts new_age = integer * 7
-  #   #return new_age
-  # end
-
 class Puppy
 
   def initealize
@@ -34,7 +28,6 @@ class Puppy
   def chase_tail(integer)
     puts "I'm dizzy from chasing my own tail #{integer} times"
   end
-
 end
 
 puppy1 = Puppy.new
@@ -43,9 +36,6 @@ puppy1.speak(3)
 puppy1.roll_over
 puppy1.dog_years(2)
 puppy1.chase_tail(30)
-
-puppy2 = Puppy.new
-
 
 
 class Basketball
@@ -73,21 +63,28 @@ nba1 = Basketball.new
 nba1.dribble(4)
 nba1.substitute("Kobe", "Randal")
 
-nba2 = Basketball.new
-
 def nba_data
-i = 0
-nba_data_structure = []
+  i = 0
+  nba_data_structure = []
   until i >= 50
-    nba_data_structure << nba1 = Basketball.new
+    nba_data_structure << Basketball.new
     i += 1
   end
-  p nba_data_structure
+  nba_data_structure
 end
-nba_data
-
-nba_data.each do |a|
+nba_data.each do |nba|
   nba.dribble(4)
   nba.substitute("kobe", "shaq")
 end
+
+#Office Hours alternate solution with Times method
+def nba_data2
+  nba_data_structure = []
+  50.times do |n|
+    p n
+    nba_data_structure << Basketball.new
+  end
+  nba_data_structure
+end
+p nba_data2
 
