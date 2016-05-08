@@ -1,19 +1,18 @@
-// create a string variable "hello"
+// create a function that takes "hello" as an argument
 // loop through each letter
 // start an empty string variable
 // current letter variable
 // length of string - index = new index position
 // add
 
-function reverse() {
-  var string = 'hello';
-  var new_string= '';
+function wordFlip(string) {
+  var newString='';
   for (i=0; i<=string.length; i++) {
-    new_string += string[(string.length)-[i]];
-    console.log(new_string);
-  }
+    newString+=string[(string.length)-[i]];
+  };
+  console.log(newString);
 }
-
-console.log(reverse());
 // bug undefined printing out begin & end
-// bug
+
+wordFlip('hello');
+
