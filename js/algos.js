@@ -20,7 +20,7 @@ function big_word(array) {
   }
 }
 var words = ["long phrase","longest phrase","longer phrase"]
-console.log(big_word(words)
+console.log(big_word(words))
 
 // Release 1
 // create a function that take two hashes as objects
@@ -28,11 +28,23 @@ console.log(big_word(words)
 // check each key in hash1 and see if it matches the key in hash2.
 // iterate through
 
-// function names_ages(first, second) {
-//   if ( first[:name] == second[:name] ) || first[:age] == second[:age] )
-//     return true
-//   else
-//     return false
-// }
+function names_ages(first, second) {
+  var keyOne = []
+  var keyTwo = []
+  var valueOne = []
+  var valueTwo = []
+  if ( keyOne == keyTwo || valueOne == valueTwo ) {
+    return true
+  } else {
+    return false
+  }
+}
 
-// names_ages( {name: "Steven", age: 54}; {name: "Tamir", age: 54} )
+names_ages( {name: "Steven", age: 54}, {name: "Tamir", age: 54} )
+
+// Release 2
+// create a function that takes an integer
+// the integer will create the same number of objects in an array.
+// randomly generate lengths of each string within the array.
+// driver code executes 10 times: generates array, prints the array,feeds array to your "longest word" function, prints the result.
+
