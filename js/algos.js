@@ -48,3 +48,5 @@ names_ages( {name: "Steven", age: 54}, {name: "Tamir", age: 54} )
 // randomly generate lengths of each string within the array.
 // driver code executes 10 times: generates array, prints the array,feeds array to your "longest word" function, prints the result.
 
+// function createArray(integer) {
+// }
