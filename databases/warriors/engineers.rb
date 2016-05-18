@@ -20,8 +20,7 @@ engineer_table = <<-ENGINEER
     name VARCHAR(255),
     job VARCHAR(255),
     language VARCHAR(255),
-    interview BOOLEAN,
-
+    interview BOOLEAN
   )
 ENGINEER
 
@@ -32,7 +31,7 @@ client_table = <<-CLIENT
     company VARCHAR(255),
     industry VARCHAR(255),
     language VARCHAR(255),
-    interview BOOLEAN,
+    interview BOOLEAN
     )
   CLIENT
 
@@ -45,6 +44,14 @@ project_table = <<-PROJECT
     completion_dates VARCHAR(255)
     )
   PROJECT
+
+combined_table = <<-COMBINED
+  CREATE TABLE IF NOT EXISTS combined(
+    id INTEGER PRIMARY KEY,
+    FOREIGN KEY (engineer_id) REFERENCES engineers(id)),
+    FOREIGN KEY (client_id) REFERENCES clients(id)),
+    FOREIGN KEY (project_id) REFERENCES projects(id))
+  COMBINED
 
 # create a database
 engineers.execute(engineer.db)
