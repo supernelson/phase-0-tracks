@@ -1,0 +1,13 @@
+body {
+  background-color:  #bf8040;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+#title {
+  color:  #ffecb3;
+}
+
+#text {
+  font-style: italic;
+}
